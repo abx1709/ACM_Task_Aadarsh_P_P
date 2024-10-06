@@ -1,7 +1,3 @@
-# Doubly Linked List Implementation
-
-
-
 ## Overview
 A doubly linked list is a data structure that consists of nodes, where each node contains a data element and pointers to both the next and previous nodes. This allows traversal in both directions (forward and backward). The following functions are implemented in this doubly linked list:
 
