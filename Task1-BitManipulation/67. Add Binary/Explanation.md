@@ -1,4 +1,4 @@
-## Problem Overview: Reverse Bits
+### Problem Overview: Reverse Bits
 Given two strings that represent binary numbers, return their sum as a binary string.
 
 ### Initialization
