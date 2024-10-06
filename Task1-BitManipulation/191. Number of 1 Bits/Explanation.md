@@ -1,4 +1,4 @@
-### Problem Overview: Reverse Bits
+### Problem Overview
 Given a 32-bit unsigned integer, return the count of its set bits.
 
 ### Initialization
