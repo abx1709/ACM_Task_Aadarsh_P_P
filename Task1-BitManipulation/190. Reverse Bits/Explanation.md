@@ -1,10 +1,10 @@
 ### Initialization
 
-The `reverseBits` method takes an integer `n` as input and initializes a result variable `res` to `0`. This variable will store the reversed bits of `n` as the method processes the input.
+The `reverseBits` method takes an integer `n` as input and initializes a result variable `res` to `0`.
 
 ### Looping Through Bits
 
-A `for` loop runs exactly 32 times to process each bit of `n`, starting from the least significant bit (LSB) and moving toward the most significant bit (MSB). In each iteration, the current result (`res`) is shifted left by one bit to make space for the next bit.
+A `for` loop runs exactly 32 times to take each bit of `n` and put it in `res`, starting from the least significant bit (LSB) and moving toward the most significant bit (MSB). In each iteration, the current result (`res`) is shifted left by one bit to make space for the next bit.
 
 ### Extracting and Shifting Bits
 
