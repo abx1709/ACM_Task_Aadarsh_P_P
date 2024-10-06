@@ -1,5 +1,5 @@
 ### Problem Overview
-Given a 32-bit unsigned integer, return the count of its set bits.
+Given a 32-bit unsigned integer, return the number of set bits (1s) it contains
 
 ### Initialization
 A counter variable `count` is initialized to `0` to keep track of the number of `1` bits.
