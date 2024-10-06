@@ -8,7 +8,7 @@ A `for` loop runs exactly 32 times to take each bit of `n`, starting from the le
 
 ### Extracting and Shifting Bits
 
-In each iteration, the least significant bit (LSB) of `n` is extracted using `n & 1` and added to `res` using the bitwise OR operation (`res |= (n & 1)`). Then, `n` is right-shifted by one bit using the unsigned right shift operator (`>>>`). The use of `>>>` ensures that `n` is treated as an unsigned integer, preventing sign extension when handling negative numbers.
+In each iteration, the least significant bit (LSB) of `n` is extracted using `n & 1` and added to `res` using the bitwise OR operation (`res |= (n & 1)`). Then, `n` is right-shifted by one bit using the unsigned right shift operator (`>>>`). The use of `>>>` ensures that `n` is treated as an unsigned integer.
 
 ### Why Both `>>` and `>>>` Work
 
