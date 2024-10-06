@@ -1,3 +1,6 @@
+### Problem Overview
+Given an array of integers where every element appears twice except for one, find the unique integer using O(n) time complexity and O(1) space complexity.
+
 ### Initialization
 A variable `res` is initialized to `0`. This will store the result of XORing all the numbers in the input array `nums`.
 
