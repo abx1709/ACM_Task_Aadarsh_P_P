@@ -12,7 +12,7 @@ In each iteration, the least significant bit (LSB) of `n` is extracted using `n 
 
 ### Why Both `>>` and `>>>` Work
 
-In this case, both the signed right shift (`>>`) and unsigned right shift (`>>>`) work because we are processing the bits exactly 32 times. However, `>>>` is a safer option as it consistently treats `n` as an unsigned number, avoiding issues with sign extension that may occur when using `>>` on negative numbers.
+In this case, both the signed right shift (`>>`) and unsigned right shift (`>>>`) work because we are processing the bits exactly 32 times. However, `>>>` is a safer option as it consistently treats `n` as an unsigned number.
 
 ### Final Result
 
