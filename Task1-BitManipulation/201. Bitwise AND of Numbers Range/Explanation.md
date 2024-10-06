@@ -1,6 +1,6 @@
 ## Problem Overview
 
-Given two integers, `left` and `right`, representing a range \[left, right]\, return the bitwise AND of all numbers within that range, inclusive.
+Given two integers, `left` and `right`, representing a range [left, right], return the bitwise AND of all numbers within that range, inclusive.
 
 ## Where to Start?
 
