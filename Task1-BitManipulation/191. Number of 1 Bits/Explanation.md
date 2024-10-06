@@ -1,3 +1,6 @@
+### Problem Overview: Reverse Bits
+Given a 32-bit unsigned integer, return the count of its set bits.
+
 ### Initialization
 A counter variable `count` is initialized to `0` to keep track of the number of `1` bits.
 
