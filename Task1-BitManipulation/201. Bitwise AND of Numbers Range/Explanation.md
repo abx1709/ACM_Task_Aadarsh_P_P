@@ -1,0 +1,44 @@
+
+### Where to start?
+
+The result will always be **equal to or less than `right`**, because the bitwise AND (`&`) operation can only turn 1 bits into 0s, never the other way around. Thus each operation can only can only clear bits in `right`.
+
+### What does the program do?
+
+The program initially stores `right` in `res` and then iterates over 31 bits (from bit 0 to 30) to determine if any of `right`'s bits should be turned to zero. The iteration starts from the **least significant bit (LSB)** to the **most significant bit (MSB)**. This is done to progressively narrow down the possible result as bits in `res` are cleared when necessary.
+
+### Explanation of the bitwise checks:
+
+1. **Right bit check**:  
+    If the bit at the `i`-th LSB of `right` is zero, it does not contribute to the result since for any x, `(x & 0 = 0)`. Therefore, the loop continues to the next iteration without modifying `res`.
+    
+2. **Left bit check**:  
+    If the bit at the `i`-th LSB of `left` is zero, then the `i`-th bit of `res` must also become zero, because `(0 & x = 0)`. This is done using `res &= ~(1 << i)`.
+    
+3. **Check for the smallest number with a zero at the `i`-th LSB**:  
+    We need to determine if it's possible for a number between `left` and `right` to have a zero in the `i`-th bit position. This is where the following check is used:
+	
+	- To directly check this, you can use the expression `(((left >> (i + 1)) + 1) << (i + 1)) < right`.
+	    - This operation removes the i+1 bits, adds one, and then shifts back to put i+1 zeros in their place.
+	    - For example, if `left = 0110`,  `right=1011` and `i = 1:
+	        - `(left >> (i + 1)) + 1` gives us `01 + 1 = 10`.
+	        - Shifting `10` back gives us `1000`, which is the smallest number greater than `left` and has a zero at the `i`-th LSB.
+	        - `1000 < 1011` is true
+	        - LSB at index `i` is turned to `0`
+	        
+	- To avoid integer overflow, we can instead use `((left >> (i + 1)) + 1) <= (right >> (i + 1))`.
+		- This is effectively the same check, ensuring we stay within bounds.
+		- For example, if `left = 0110` ,  `right=1011` and `i = 1:
+	        - `(left >> (i + 1)) + 1` gives us `01 + 1 = 10`.
+	        - `(right >> (i+1))` is `10`
+	        - `10<=10` is true
+	        - LSB at index `i` is turned to `0`
+	
+	*   To prove that `( (x<<n) < y ) -> ( x <= (y>>n) )`
+		* `if x<<n < y`
+		* `-> x * 2^n < y`
+		* `-> x < y/2^n`
+		* `-> x <= floor(y/2^n)`
+		* `-> x <= y>>n`
+
+At the end of this process, `res` will hold the final result.
