@@ -1,5 +1,4 @@
-
-R̥1r3lte4yr̥class Solution {
+class Solution {
     public int rangeBitwiseAnd(int left, int right) {
         int res = right;
 
