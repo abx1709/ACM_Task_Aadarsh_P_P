@@ -1,5 +1,3 @@
-# Remove Duplicates from a Sorted Linked List
-
 ## Problem Overview
 The goal is to remove duplicate nodes from a sorted singly linked list. The input is the head of the linked list, and the output is the head of the modified linked list with unique values.
 
