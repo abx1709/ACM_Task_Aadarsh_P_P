@@ -1,3 +1,6 @@
+## Problem Overview: Reverse Bits
+Given two strings that represent binary numbers, return their sum as a binary string.
+
 ### Initialization
 
 We start by initializing two pointers, `i` and `j`, to the last indices of the binary strings `a` and `b`, respectively. A `carry` variable is set to `0`, and a `StringBuilder` (`res`) is used to build the result.
