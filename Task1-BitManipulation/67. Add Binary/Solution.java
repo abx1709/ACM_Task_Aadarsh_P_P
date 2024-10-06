@@ -10,7 +10,7 @@ class Solution {
             int val2 = (j > -1) ? b.charAt(j) - '0' : 0; j--;
 
             int s = val1 + val2 + carry;
-            carry = (s & 2) >> 1;
+            carry = s >> 1;
             res.append(s & 1);
         }
 
