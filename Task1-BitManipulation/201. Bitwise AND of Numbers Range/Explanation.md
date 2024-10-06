@@ -37,7 +37,8 @@ It is given that `0 <= left <= right <= 2^31 - 1`, meaning the 32nd bit will alw
 	        - `(right >> (i+1))` is `10`
 	        - `10<=10` is true
 	        - LSB at index `i` is turned to `0`
-	
+
+ 
 	*   To prove that `( (x<<n) < y ) -> ( x <= (y>>n) )`
 		* `if x<<n < y`
 		* `-> x * 2^n < y`
