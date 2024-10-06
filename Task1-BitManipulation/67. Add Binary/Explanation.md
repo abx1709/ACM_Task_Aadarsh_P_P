@@ -1,8 +1,7 @@
+We start by initializing two pointers, i and j, to the last indices of the binary strings a and b, respectively. A carry variable is set to 0, and a StringBuilder (res) is used to build the result.
 
-We initialize two pointers, `i` and `j`, to the last indices of the binary strings `a` and `b`, respectively. A `carry` variable is set to `0`, and a `StringBuilder` (`res`) is used to construct the result.
+The loop continues while there are digits left in either string (i > -1 or j > -1) or a carry remains. In each iteration, the digits from a and b are extracted and converted to integers (val1 and val2). These values are added along with the carry to produce the sum s.
 
-The loop continues as long as there are digits left in either string (`i > -1` or `j > -1`) or a carry exists. For each iteration, the digits from `a` and `b` are extracted and converted to integers (`val1` and `val2`). These are added along with the carry to get the sum `s`.
+The carry is updated by extracting the second least significant bit (s >> 1), and the least significant bit (s & 1) is appended to the result. After processing each digit, the pointers i and j are decremented, moving towards the next lower bits of the numbers.
 
-We compute the new carry as `s >> 1` (remove the LSB), and append the LSB (`s & 1`) to the result. The pointers `i` and `j` are decremented after each step. (we move towards the next LSB of each number)
-
-After exiting the loop, the `StringBuilder` is reversed and returned as the final binary sum.
+Once the loop completes, the StringBuilder is reversed to correct the order of the binary result and returned as the final binary sum.
