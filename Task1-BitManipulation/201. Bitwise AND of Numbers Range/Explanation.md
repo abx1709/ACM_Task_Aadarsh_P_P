@@ -5,7 +5,11 @@ The result will always be **equal to or less than `right`**, because the bitwise
 
 ### What does the program do?
 
-The program initially stores `right` in `res` and then iterates over 31 bits (from bit 0 to 30) to determine if any of `right`'s bits should be turned to zero. The iteration starts from the **least significant bit (LSB)** to the **most significant bit (MSB)**. This is done to progressively narrow down the possible result as bits in `res` are cleared when necessary.
+The program initially stores `right` in `res` and then iterates over 31 bits (`i` goes from 0 to 30) to determine if any of `right`'s bits should be turned to zero. The iteration starts from the **least significant bit (LSB)** to the **most significant bit (MSB)**. This is done to progressively narrow down the possible result as bits in `res` are cleared when necessary.
+
+##### Why check only 31 bits and not 32?
+
+It is given that `0 <= left <= right <= 2^31 - 1`, meaning the 32nd bit will always be `0` since any number equal to or greater than `left` is non-negative.
 
 ### Explanation of the bitwise checks:
 
