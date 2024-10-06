@@ -49,4 +49,6 @@ It is given that `0 <= left <= right <= 2^31 - 1`, meaning the 32nd bit will alw
         - Thus, `x <= floor(y / 2^n)`
         - And finally, `x <= y >> n`.
 
+## Final Result
+
 At the end of this process, `res` will hold the final result.
