@@ -1,4 +1,4 @@
-# Problem Overview
+## Problem Overview
 Implement post-order traversal of a binary tree, printing the node values in a single line, separated by spaces.
 
 ## Initialization
