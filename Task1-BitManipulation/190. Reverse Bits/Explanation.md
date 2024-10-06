@@ -1,5 +1,4 @@
-## Problem Overview: Reverse Bits
-
+## Problem Overview
 Given a 32-bit unsigned integer, reverse its bits and return the result.
 
 ### Initialization
