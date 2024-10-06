@@ -1,3 +1,7 @@
+## Problem Overview: Reverse Bits
+
+Given a 32-bit unsigned integer, reverse its bits and return the result.
+
 ### Initialization
 
 The `reverseBits` method takes an integer `n` as input and initializes a result variable `res` to `0`.
