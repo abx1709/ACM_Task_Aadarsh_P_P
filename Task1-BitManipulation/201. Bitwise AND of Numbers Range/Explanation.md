@@ -1,4 +1,8 @@
-# Where to Start?
+## Problem Overview: Bitwise AND of Numbers Range
+
+Given two integers, `left` and `right`, representing a range \([left, right]\), return the bitwise AND of all numbers within that range, inclusive.
+
+## Where to Start?
 
 The result will always be **equal to or less than `right`**, because the bitwise AND (`&`) operation can only turn `1` bits into `0`s, never the other way around. Thus, each operation can only clear bits in `right`.
 
