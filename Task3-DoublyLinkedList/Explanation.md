@@ -1,10 +1,10 @@
-## Doubly Linked List Implementation
+# Doubly Linked List Implementation
 
 
-### Overview
+## Overview
 A doubly linked list is a data structure that consists of nodes, where each node contains a data element and pointers to both the next and previous nodes. This allows traversal in both directions (forward and backward). The following functions are implemented in this doubly linked list:
 
-### Functionalities
+## Functionalities
 
 1. **Insertion**:
    - **`insertAtStart(int data)`**: 
@@ -52,8 +52,8 @@ A doubly linked list is a data structure that consists of nodes, where each node
      - It also indicates if the list is empty.
 
 
-### Exception Handling
+## Exception Handling
 - The implementation uses **IndexOutOfBoundsException** for invalid index access and a custom exception, **EmptyListException**, for operations on an empty list during insertion or deletion.
 
-### Summary
+## Summary
 This implementation provides an efficient way to manage a doubly linked list, allowing for easy insertion, deletion, and movement through nodes in both directions.
