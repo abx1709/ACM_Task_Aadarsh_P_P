@@ -16,4 +16,4 @@ In this case, both the signed right shift (`>>`) and unsigned right shift (`>>>`
 
 ### Final Result
 
-After 32 iterations, `res` contains the reversed bits of `n`, and the method returns `res`, giving the correct reversed binary representation of the original integer. Using `>>>` ensures consistent behavior for both positive and negative values.
+After 32 iterations, `res` contains the reversed bits of `n`, and the method returns `res`, giving the correct reversed binary representation of the original integer.
