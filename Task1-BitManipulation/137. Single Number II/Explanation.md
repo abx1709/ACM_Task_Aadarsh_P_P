@@ -1,3 +1,6 @@
+### Problem Overview
+The task is to find the single number in an integer array `nums`, where every other number appears exactly three times. The solution must have linear runtime complexity and use only constant extra space.
+
 ### Initialization
 A variable `res` is initialized to `0`. This variable will hold the resulting single number that appears exactly once.
 
