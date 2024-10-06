@@ -4,7 +4,7 @@ The `reverseBits` method takes an integer `n` as input and initializes a result 
 
 ### Looping Through Bits
 
-A `for` loop runs exactly 32 times to take each bit of `n` and put it in `res`, starting from the least significant bit (LSB) and moving toward the most significant bit (MSB). In each iteration, the current result (`res`) is shifted left by one bit to make space for the next bit.
+A `for` loop runs exactly 32 times to take each bit of `n`, starting from the least significant bit (LSB) and moving toward the most significant bit (MSB). In each iteration, the current result (`res`) is shifted left by one bit to make space for the next bit. Thus, the `i`-th LSB of `n` becomes the `i`-th MSB of `res` in each iteration.
 
 ### Extracting and Shifting Bits
 
